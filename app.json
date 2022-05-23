@@ -1,0 +1,60 @@
+{
+    "name": "𝐊𝐚𝐚𝐥𝐔𝐬𝐞𝐫𝐁𝐨𝐭",
+    "logo": "https://te.legra.ph/file/1d6f55f754c0ad3b69048.jpg",
+    "description": "𝐀𝐧 𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝 𝐔𝐬𝐞𝐫𝐁𝐨𝐭 𝐅𝐨𝐫 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐈𝐃 𝐖𝐢𝐭𝐡 𝐕𝐂 𝐌𝐮𝐬𝐢𝐜 𝐅𝐞𝐚𝐭𝐮𝐫𝐞 𝐁𝐚𝐬𝐞𝐝 𝐎𝐧 𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/adityabots/kaaluserbot",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "Your App ID",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your App Hash",
+            "required": true
+        },
+        "ALIVE_PIC": {
+            "description": "Alive Pic Link For Alive Command",
+            "required": true,
+            "value": "https://te.legra.ph/file/1d6f55f754c0ad3b69048.jpg"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Your Heroku App Name",
+            "required": true
+        },
+        "HEROKU_API_KEY": {
+            "description": "Your Heroku Api Key",
+            "required": true
+        },
+        "LOGS_GROUP_ID": {
+            "description": "Logger Group ID",
+            "required": true
+        },
+        "MONGO_DB_URL": {
+            "description": "MongoDB UrL",
+            "required": true
+        },
+        "STRING_SESSION": {
+            "description": "Pyrogram String Session",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "Your Sudo User ID (You Can Add Multi User Id By Giving Space)",
+            "required": true
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+             ],
+    "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ]
+}
