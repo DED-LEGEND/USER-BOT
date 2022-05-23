@@ -33,7 +33,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "XXXXX")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", "XXXXX")
 MONGO_DB_URL = getenv("MONGO_DB_URL", "XXXXX")
 STRING_SESSION = getenv("STRING_SESSION", "session")
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1282754256").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5356564375").split()))
 LOGS_GROUP_ID = getenv("LOGS_GROUP_ID", "XXXXX")
 
 if LOGS_GROUP_ID:
