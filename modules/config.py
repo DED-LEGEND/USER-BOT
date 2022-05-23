@@ -38,11 +38,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
 LOGS_GROUP_ID = getenv("LOGS_GROUP_ID", "")
 MONGO_DB_URL = getenv("MONGO_DB_URL", "")
 STRING_SESSION = getenv("STRING_SESSION", "session")
-
-#𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑𝐒
-SUDO_USERS = (map(int, getenv(SUDO_USERS, "5356564375").split()))
-
-# 𝐃𝐨 𝐍𝐨𝐭 𝐂𝐡𝐚𝐧𝐠𝐞 𝐓𝐡𝐢𝐬 𝐋𝐢𝐧𝐞𝐬 // 𝐈𝐠𝐧𝐨𝐫𝐞 𝐓𝐡𝐢𝐬 (𝐀𝐝𝐢𝐭𝐲𝐚 𝐇𝐚𝐥𝐝𝐞𝐫) 
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5356564375").split()))
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
 
 if LOGS_GROUP_ID:
