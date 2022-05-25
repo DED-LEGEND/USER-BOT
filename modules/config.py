@@ -24,17 +24,17 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 
-API_HASH = getenv("API_HASH", "d927c13beaaf5110f25c505b7c071273")
-API_ID = int(getenv("API_ID", "12380656"))
-ALIVE_PIC = getenv("ALIVE_PIC", "https://te.legra.ph/file/1d6f55f754c0ad3b69048.jpg")
-DATABASE_URL = getenv("DATABASE_URL", "XXXXX")
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "XXXXX")
-HEROKU_API_KEY = getenv("HEROKU_API_KEY", "XXXXX")
-MONGO_DB_URL = getenv("MONGO_DB_URL", "XXXXX")
-STRING_SESSION = getenv("STRING_SESSION", "session")
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5356564375").split()))
-LOGS_GROUP_ID = getenv("LOGS_GROUP_ID", "XXXXX")
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
+API_HASH = getenv("API_HASH", "32aa547bd6cc2e9f61063cd31e0bc0a5")
+API_ID = int(getenv("API_ID", "10655360"))
+ALIVE_PIC = getenv("ALIVE_PIC", "https://telegra.ph/file/72b5352f934e8caa6dcf1.jpg")
+DATABASE_URL = getenv("DATABASE_URL", None)
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
+HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
+MONGO_DB_URL = getenv("MONGO_DB_URL", "mongodb+srv://pyrobot:pyrobot@cluster0.lsr4q.mongodb.net/?retryWrites=true&w=majority")
+STRING_SESSION = getenv("STRING_SESSION", "BQC6dCYaSzYN8hrtu6Qhh789oJak-z3SALKKiQpsEy-aE__rd8NIH_-hxG1dvmxuFx4PDOUb_7ivYsMPXQFwWGqE_W_mpmwJZ5e_jJZ-uqqyszKTT1g7fz2sGx-0oCOsLxoAwcPniUJsA2WAs9ncdwCmQ3KCkTqDkfbV_mjc8CN9tlfL39r9v_PAQUqGx7KJ0XY8ZiI01u0cqq7uqogwkgKhUuqGji01ym0Ptg9FfJE5SpRxKKBudIv-N0qD06_LXGCpiYA-GeYkFozvV3Z7YtTOrLRhtO_2yuD9B_VbWi_jPl_fEwrl_AnCw1HwNQgAXloNk1KrI3VYIeXvX82hk-9nVNiTrAA")
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", None).split()))
+LOGS_GROUP_ID = getenv("LOGS_GROUP_ID", "-1001717936747")
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "*").split())
 
 if LOGS_GROUP_ID:
     Owner = LOGS_GROUP_ID
