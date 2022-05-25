@@ -11,6 +11,46 @@
             "required": true,
             "value": "https://te.legra.ph/file/1d6f55f754c0ad3b69048.jpg"
         }
+        "API_ID": {
+            "description": "Api id",
+            "required": true,
+            "value": "",
+        }
+        "API_HASH": {
+            "description": "Api Hash",
+            "required": true,
+            "value": "",
+        }
+        "HEROKU_APP_NAME": {
+            "description": "nama app heroku",
+            "required": true,
+            "value": "",
+        }
+        "HEROKU_API_KEY": {
+            "description": "heroku api key",
+            "required": true,
+            "value": "",
+        }
+        "MONGO_DB_URL": {
+            "description": "mongodb.com",
+            "required": true,
+            "value": "",
+        }
+        "STRING_SESSION": {
+            "description": "Pyrogram Session",
+            "required": true,
+            "value": "",
+        }
+        "LOGS_GROUP_ID": {
+            "description": "ID group",
+            "required": true,
+            "value": "-100",
+        }
+        "COMMAND_PREFIXES": {
+            "description": "Handler",
+            "required": true,
+            "value": "*",
+        }
     },
     "addons": [
         {
