@@ -1,5 +1,3 @@
-#𝐊𝐚𝐚𝐥𝐔𝐬𝐞𝐫𝐁𝐨𝐭 𝐑𝐞𝐪𝐮𝐢𝐫𝐞𝐦𝐞𝐧𝐭𝐬
-
 aiohttp
 aiofiles
 asyncio
